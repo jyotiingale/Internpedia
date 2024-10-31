@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" onsubmit="return validateForm()">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <p class="forgot">Forgot password ?</p>
+            </div>
+            <button type="submit" onclick="add()">Login</button><br>
+            <div class="sign-link">
+                <p>Or sign up Using</p>
+                <br>
+                <div class="social-icons">
+                    <a href="#facebook"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#google"><i class="ri-google-fill"></i></a>
+                    <a href="#twitter"><i class="ri-twitter-fill"></i></a>
+                </div>
+                <br>
+                <p>Or sign up Using</p>
+                <br>
+                <p><a href="#sign up">SING UP</a></p>
+            </div>
+
+        </form>
+    </div>
+</body>
+<script>
+    function add(){
+        alert('your login from successfully completed');
+    }
+    add();
+</script>
+</html>
